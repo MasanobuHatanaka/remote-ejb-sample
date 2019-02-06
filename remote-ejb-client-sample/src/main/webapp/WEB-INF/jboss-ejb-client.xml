@@ -2,6 +2,7 @@
     <client-context>
         <ejb-receivers>
             <remoting-ejb-receiver outbound-connection-ref="remote-ejb-connection-serverA"/>
+            <remoting-ejb-receiver outbound-connection-ref="remote-ejb-connection-serverB"/>
         </ejb-receivers>
     </client-context>
 </jboss-ejb-client>
