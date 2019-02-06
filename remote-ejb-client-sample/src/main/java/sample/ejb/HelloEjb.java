@@ -22,6 +22,10 @@ public class HelloEjb {
 			HelloServerARemote beanA = (HelloServerARemote) context.lookup("ejb:/remote-ejb-serverA-sample//HelloServerA" + "!" + HelloServerARemote.class.getName() + "?stateful");
 			System.out.println(beanA.helloServerA());
 			
+			//added for workaround
+			HelloServerBRemote beanB = (HelloServerBRemote) context.lookup("ejb:/remote-ejb-serverB-sample//HelloServerB" + "!" + HelloServerBRemote.class.getName() + "?stateful");
+			System.out.println(beanB.helloServerB());
+			
 			context.close();		
 			
 		} catch (Exception e) {
