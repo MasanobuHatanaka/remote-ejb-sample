@@ -14,15 +14,15 @@ public class HelloServerA implements HelloServerARemote {
 		
 		try {
 			
-			//Properties props = new Properties();
-			//props.put(Context.URL_PKG_PREFIXES, "org.jboss.ejb.client.naming");
+			Properties props = new Properties();
+			props.put(Context.URL_PKG_PREFIXES, "org.jboss.ejb.client.naming");
 	    
-			//Context context = new InitialContext(props);  
+			Context context = new InitialContext(props);  
 		
-			//HelloServerBRemote beanB = (HelloServerBRemote) context.lookup("ejb:/remote-ejb-serverB-sample//HelloServerB" + "!" + HelloServerBRemote.class.getName() + "?stateful");
-			//System.out.println(beanB.helloServerB());
+			HelloServerBRemote beanB = (HelloServerBRemote) context.lookup("ejb:/remote-ejb-serverB-sample//HelloServerB" + "!" + HelloServerBRemote.class.getName() + "?stateful");
+			System.out.println(beanB.helloServerB());
 		
-			//context.close();	
+			context.close();	
 		
 		} catch (Exception e) {
 			throw new RuntimeException(e);
