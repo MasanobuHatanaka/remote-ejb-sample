@@ -30,9 +30,9 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.jboss.ejb3</groupId>
-            <artifactId>jboss-ejb3-ext-api</artifactId>
-            <scope>provided</scope>
+            <groupId>org.jboss</groupId>
+           <artifactId>jboss-ejb-client</artifactId>
+           <version>4.0.14.Final</version>
         </dependency>
     </dependencies>
 
