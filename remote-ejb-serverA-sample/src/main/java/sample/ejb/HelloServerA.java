@@ -12,7 +12,7 @@ import javax.ejb.TransactionAttributeType;
 
 @Stateful
 public class HelloServerA implements HelloServerARemote {
-	@Override
+
 	public String helloServerA() {
 		System.out.println("executed helloServerA()");
 		
