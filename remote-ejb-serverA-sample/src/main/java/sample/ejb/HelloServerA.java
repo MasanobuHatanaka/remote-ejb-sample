@@ -11,7 +11,6 @@ import javax.ejb.TransactionAttributeType;
 
 
 @Stateful
-@Remote(HelloServerARemote.class)
 public class HelloServerA implements HelloServerARemote {
 	@Override
 	public String helloServerA() {
