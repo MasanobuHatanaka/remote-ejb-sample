@@ -5,6 +5,8 @@ import javax.ejb.Stateful;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import sample.ejb.HelloServerBRemote;
+import javax.ejb.TransactionAttributeType;
+
 
 @Stateful
 @TransactionAttribute(TransactionAttributeType.NEVER)
