@@ -11,7 +11,6 @@ import javax.ejb.TransactionAttributeType;
 
 
 @Stateful
-
 public class HelloServerA implements HelloServerARemote {
 	
 	public String helloServerA() {
