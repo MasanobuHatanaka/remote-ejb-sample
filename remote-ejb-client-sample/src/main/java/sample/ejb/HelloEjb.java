@@ -12,7 +12,6 @@ import javax.ejb.TransactionAttribute;
 import javax.ejb.TransactionAttributeType;
 
 @Stateful
-@TransactionAttribute(TransactionAttributeType.NEVER)
 public class HelloEjb {
 	public void hello() {
 
