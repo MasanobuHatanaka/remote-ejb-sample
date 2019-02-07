@@ -7,6 +7,7 @@ import javax.naming.InitialContext;
 import sample.ejb.HelloServerBRemote;
 
 @Stateful
+@TransactionAttribute(TransactionAttributeType.NEVER)
 public class HelloServerA implements HelloServerARemote {
 	
 	public String helloServerA() {
